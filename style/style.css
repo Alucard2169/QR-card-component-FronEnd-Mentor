@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #D5E1EF;
+}
+
+.card {
+  padding: 1rem;
+  background-color: white;
+  max-width: 330px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 20px;
+  -webkit-box-shadow: -25px 30px 80px #b3c7d1;
+          box-shadow: -25px 30px 80px #b3c7d1;
+}
+
+.card .qr {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.card .code {
+  position: relative;
+}
+
+.card .code::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: skyblue;
+  opacity: 0;
+  border-radius: 10px;
+  z-index: 10;
+}
+
+.card .code:hover::before {
+  opacity: 0.2;
+}
+
+.card .details {
+  margin-top: 1.5rem;
+}
+
+.card .details .heading {
+  font-size: 1.5rem;
+  color: #1f3251;
+}
+
+.card .details .about {
+  margin: 1.2rem 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #7b879d;
+}
+/*# sourceMappingURL=style.css.map */
